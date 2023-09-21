@@ -3,7 +3,7 @@
 # FILENAME: decision_tree.py
 # SPECIFICATION: Creating a decision tree from a csv file with features and classes
 # FOR: CS 4210- Assignment #1
-# TIME SPENT: 7 hours
+# TIME SPENT: 4 hours (total assignment)
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard
@@ -18,8 +18,7 @@ X = []
 Y = []
 
 #reading the data in a csv file
-#CHANGE BACK TO NORMAL LATER
-with open('C:\\Users\\Rebecca\\Downloads\\contact_lens.csv', 'r') as csvfile:
+with open('contact_lens.csv', 'r') as csvfile:
   reader = csv.reader(csvfile)
   for i, row in enumerate(reader):
       if i > 0: #skipping the header
